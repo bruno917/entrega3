@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body id="contacto">
+    <header>
+        <div class="logo"><button>MB Desarrollo</button></div>
+    
+        <div class="menu-container">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰ 
+            </div>
+            <nav id="nav">
+                <ul class="botones">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li class="contact"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="perfil">
+        <h1>Sobre mi</h1>
+        <p>Transformamos ideas en código, y código en experiencias que inspiran.</p>
+        <p>¡Hola! Soy Bruno Mariño.</p>
+        <p>Soy desarrollador web en formación, con experiencia en diseño gráfico y una pasión por crear sitios atractivos y funcionales. Desde Montevideo, Uruguay, ofrezco una variedad de servicios, desde páginas web básicas hasta proyectos más complejos con animaciones y funcionalidades avanzadas.
+        Mi objetivo es convertir ideas en experiencias digitales únicas. ¡Hablemos sobre tu próximo proyecto!
+        </p>
+        <img src="#">
+        <div class="formulario">
+                <h2>Contacto</h2>
+                <form>
+                <h3>Nombre</h3>
+                <input type="text" placeholder="Juan" name="nombre" required>
+                <h3>Apellido</h3>
+                <input type="text" placeholder="Rodriguez" name="apellido" required>
+                <h3>Correo</h3>
+                <input type="email" placeholder="nombre@gmail.com" name="email" required>
+                <h3>Mensaje</h3>
+                <input type="text" placeholder="Escribe un mensaje" name="mensaje" required>
+                <input type="submit" class="enviar">
+            </form>
+        </div>    
+        </section>
+    </main>    
+    <footer id="footer">
+        <div class="Direccion">
+            <h3>MB Desarrollo</h3>
+            <P>Av Bulevar General Artigas y Esq Garibaldi 2566</P>
+            <p>Calle Ramon Collazo, 2455 Esq Beto Ruiz 003</p>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav ul');
+    
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

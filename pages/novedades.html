@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades</title>
+</head>
+<body id="novedades">
+    <header>
+        <div class="logo"><button>MB Desarrollo</button></div>
+    
+        <div class="menu-container">
+            <div class="menu-toggle" id="menu-toggle">
+                ☰ 
+            </div>
+            <nav id="nav">
+                <ul class="botones">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li class="contact"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section>
+            <h1>Hosting + Diseño</h1>
+            <p>NUEVA OFERTA!</p>
+            <p>$11,99</p>
+            <a href="#">Agregar al carrito</a>
+            <p>Nueva oferta, te incluimos el hosting a tu diseño tan solo por $11.99!!</p>
+            <img src="#">
+        </section>
+        <section>
+            <h2>Nuestros clientes</h2>
+            <img src="#">
+        </section>
+        <footer id="footer">
+            <div class="Direccion">
+                <h3>MB Desarrollo</h3>
+                <P>Av Bulevar General Artigas y Esq Garibaldi 2566</P>
+                <p>Calle Ramon Collazo, 2455 Esq Beto Ruiz 003</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav ul');
+    
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
