@@ -361,13 +361,79 @@ nav ul li a:hover{
 
 #nosotros{
     background-image: url(../images/background.png);
+    color: white;  
+}
+
+#servicios {
+    background-image: url(../images/background.png);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#servicios #main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#servicios #main > section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#servicios #main > section:first-of-type img {
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+}
+
+
+#servicios #main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+
+#servicios #main section:nth-of-type(2) article {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     color: white;
 }
 
-#servicios{
-    background-image: url(../images/background.png) ;
+
+#servicios #main section:nth-of-type(2) article a {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
+#servicios #main section:nth-of-type(2) article a:hover {
+    background-color: #0056b3;
+}
+
+
+#servicios #main section:nth-of-type(2) article img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    background-color: #ddd;
+}
+
+
 
 #novedades{
     background-image: url(../images/background.png);
