@@ -1,0 +1,96 @@
+
+/* nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+button{
+    background-color: rgb(14, 14, 81);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-color: rgb(14, 14, 81);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: transparent;
+}
+
+
+
+div {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    position: relative;
+    color: rgb(237, 228, 228); 
+}
+
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: rgb(14, 14, 81);
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0,3, color 0.3s;
+}
+
+
+
+nav ul li a:hover{
+    background: transparent;
+}
+
+/* responsive */
+
+@media (max-width: 960px) {
+    nav ul.botones {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(14, 14, 81);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    nav ul.botones.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul li a {
+        margin: 10px 0;
+    }
+}

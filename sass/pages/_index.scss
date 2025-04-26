@@ -1,0 +1,134 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center; 
+    height: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.principal h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 200px;
+}
+
+.principal p {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.principal button {
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    height: 30px;
+    width: 140px;
+    background: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0,3, color 0.3s;
+}
+
+.principal button:hover{
+    color: rgb(14, 14, 81);
+}
+
+/** Productos y descripcion **/
+
+.articulo{
+    background-image: url(../images/background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.articulo h2{
+    color: rgb(14, 14, 81);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.articulo h3{
+    text-transform: uppercase;
+    color: rgb(14, 14, 81);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.articulo p{
+    font-size: 13px;
+    color: rgb(29, 29, 116);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.Info{
+    height:500px ;
+    background-image: url(../images/background3.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.Info h2{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.h4{
+    padding-top: 20px;
+    justify-content: center;
+    gap: 50%;
+}
+
+.text{
+    gap: 20%;
+    padding: 20px;
+}
+
+.clientes {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.clientes h2 {
+    color: rgb(14, 14, 81);
+    padding-top: 3%;
+}
+
+.clientes img {
+    width: 100%;  
+    max-width: 700px; 
+    height: auto;  
+    object-fit: cover; 
+    object-position: center;
+    margin-top: 3%; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
