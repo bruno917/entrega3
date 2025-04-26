@@ -1,3 +1,13 @@
+#contacto {
+    background-image: url(../images/background.png);
+    color: white;
+}
+
+#nosotros{
+    background-image: url(../images/background.png);
+    color: white;  
+}
+
 #servicios {
     background-image: url(../images/background.png);
     color: white;
@@ -65,4 +75,18 @@
     height: auto;
     margin-top: 1rem;
     background-color: #ddd;
+}
+
+
+
+#novedades{
+    background-image: url(../images/background.png);
+    color: white;
+}
+
+#somos section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
 }

@@ -1,5 +1,4 @@
-/* IMPORT RESET*/
-/* Reset */
+/* USE LAYOUT */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   max-width: 100%;
 }
 
-/* nav */
 header {
   display: flex;
   justify-content: space-between;
@@ -73,82 +71,6 @@ nav ul li a:hover {
   background: transparent;
 }
 
-/* responsive */
-@media (max-width: 960px) {
-  nav ul.botones {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(14, 14, 81);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-  }
-  nav ul.botones.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  nav ul li a {
-    margin: 10px 0;
-  }
-}
-.menu-toggle {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: transparent;
-  padding: 20px;
-  text-align: left;
-  width: 100%;
-  gap: 20px;
-}
-
-#footer h3 {
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 10px 0;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#footer h3:hover {
-  background: transparent;
-}
-
-#footer p {
-  align-content: center;
-  margin: 5px 20px;
-  padding: 0;
-  color: rgb(0, 0, 0);
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  #footer {
-    padding: 15px;
-    text-align: left;
-  }
-  #footer h3 {
-    font-size: 18px;
-    margin: 20px;
-  }
-  #footer p {
-    font-size: 14px;
-  }
-}
-/* IMPORT PAGES */
 .principal {
   display: flex;
   flex-direction: column;
@@ -193,7 +115,6 @@ nav ul li a:hover {
   color: rgb(14, 14, 81);
 }
 
-/** Productos y descripcion **/
 .articulo {
   background-image: url(../images/background2.png);
   background-position: center;
@@ -282,6 +203,139 @@ nav ul li a:hover {
   margin-right: auto;
 }
 
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: transparent;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  gap: 20px;
+}
+
+#footer h3 {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#footer h3:hover {
+  background: transparent;
+}
+
+#footer p {
+  align-content: center;
+  margin: 5px 20px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+/* pIE DE PAGINA */
+@media (max-width: 768px) {
+  #footer {
+    padding: 15px;
+    text-align: left;
+  }
+  #footer h3 {
+    font-size: 18px;
+    margin: 20px;
+  }
+  #footer p {
+    font-size: 14px;
+  }
+}
+/* USE CONTACTO */
+.perfil {
+  height: 1000px;
+  margin: 100px 20px;
+}
+
+.formulario {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario h2 {
+  color: black;
+  margin-right: 50px;
+}
+
+.formulario h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin: 10px 0;
+}
+
+.formulario .enviar {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  margin-top: 20px;
+  height: 25px;
+  width: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(14, 14, 81);
+  transition: 0, 3, color 0.3s;
+}
+
+.formulario .enviar:hover {
+  background: transparent;
+}
+
+.formulario input {
+  height: 25px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* USE OTHER LAYOUT */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  nav ul.botones {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(14, 14, 81);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+  }
+  nav ul.botones.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  nav ul li a {
+    margin: 10px 0;
+  }
+}
+#contacto {
+  background-image: url(../images/background.png);
+  color: white;
+}
+
+#nosotros {
+  background-image: url(../images/background.png);
+  color: white;
+}
+
 #servicios {
   background-image: url(../images/background.png);
   color: white;
@@ -346,7 +400,7 @@ nav ul li a:hover {
   background-color: #ddd;
 }
 
-#nosotros {
+#novedades {
   background-image: url(../images/background.png);
   color: white;
 }
@@ -358,75 +412,13 @@ nav ul li a:hover {
   height: 700px;
 }
 
-#novedades {
-  background-image: url(../images/background.png);
-  color: white;
-}
-
-.perfil {
-  height: 1000px;
-  margin: 100px 20px;
-}
-
-.formulario {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.formulario h2 {
-  color: black;
-  margin-right: 50px;
-}
-
-.formulario h3 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin: 10px 0;
-}
-
-.formulario .enviar {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  margin-top: 20px;
-  height: 25px;
-  width: 80px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  background-color: rgb(14, 14, 81);
-  transition: 0, 3, color 0.3s;
-}
-
-.formulario .enviar:hover {
-  background: transparent;
-}
-
-.formulario input {
-  height: 25px;
-  width: 200px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-#contacto {
-  background-image: url(../images/background.png);
-  color: white;
-}
-
 /* Navegacion */
 /** Pantalla inicial **/
+/** Productos y descripcion **/
 /** Clientes **/
 /** Footer, direccion y contacto **/
-/* pIE DE PAGINA */
 /** Ultima pagina **/
 /** Menu hamburguesa **/
 /* Responsive */
-/* contacto */
-/* nosotros */
-/* servicos */
-/* novedades */
-/* nosotros */
 
 /*# sourceMappingURL=styles.css.map */

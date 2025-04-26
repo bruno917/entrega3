@@ -1,0 +1,26 @@
+.clientes {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.clientes h2 {
+    color: rgb(14, 14, 81);
+    padding-top: 3%;
+}
+
+.clientes img {
+    width: 100%;  
+    max-width: 700px; 
+    height: auto;  
+    object-fit: cover; 
+    object-position: center;
+    margin-top: 3%; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}

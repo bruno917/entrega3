@@ -1,25 +1,29 @@
-/* IMPORT RESET*/
+/* USE LAYOUT */
 
 @use "./layout/reset";
 @use "./layout/nav";
-@use "./layout/menuHamburguesa";
+@use "./layout/mainPage";
+@use "./layout/mainProduct";
+@use "./layout/client";
 @use "./layout/footer";
 
-/* IMPORT PAGES */
-
-@use "./pages/index";
-@use "./pages/servicios";
-@use "./pages/nosotros";
-@use "./pages/novedades";
+/* USE CONTACTO */
 @use "./pages/contacto";
 
+/* USE OTHER LAYOUT */
 
-
+@use "./layout/menu";
+@use "./layout/responsive";
+@use "./layout/resto";
+ 
 /* Navegacion */
 
 
-
 /** Pantalla inicial **/
+
+
+
+/** Productos y descripcion **/
 
 
 
@@ -30,12 +34,7 @@
 /** Footer, direccion y contacto **/
 
 
-
-/* pIE DE PAGINA */
-
-
 /** Ultima pagina **/
-
 
 
 /** Menu hamburguesa **/
@@ -44,22 +43,4 @@
 
 /* Responsive */
 
-
-
-/* contacto */
-
-
-
-/* nosotros */
-
-
-
-/* servicos */
-
-
-
-/* novedades */
-
-
-/* nosotros */
 
