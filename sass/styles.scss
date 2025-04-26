@@ -1,3 +1,10 @@
+/* IMPORT RESET*/
+
+@use "./layout/reset";
+@use "./layout/nav";
+@use "./layout/menuHamburguesa";
+@use "./layout/footer";
+
 /* IMPORT PAGES */
 
 @use "./pages/index";
@@ -6,12 +13,7 @@
 @use "./pages/novedades";
 @use "./pages/contacto";
 
-/* IMPORT LAYOUTS */
 
-@use "./layout/reset";
-@use "./layout/nav";
-@use "./layout/menuHamburguesa";
-@use "./layout/footer"
 
 /* Navegacion */
 

@@ -1,3 +1,153 @@
+/* IMPORT RESET*/
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+/* nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+button {
+  background-color: rgb(14, 14, 81);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-color: rgb(14, 14, 81);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: transparent;
+}
+
+div {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  position: relative;
+  color: rgb(237, 228, 228);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav ul li a {
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: rgb(14, 14, 81);
+  font-size: 18px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0, 3, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: transparent;
+}
+
+/* responsive */
+@media (max-width: 960px) {
+  nav ul.botones {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(14, 14, 81);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+  }
+  nav ul.botones.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  nav ul li a {
+    margin: 10px 0;
+  }
+}
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: transparent;
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  gap: 20px;
+}
+
+#footer h3 {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#footer h3:hover {
+  background: transparent;
+}
+
+#footer p {
+  align-content: center;
+  margin: 5px 20px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  #footer {
+    padding: 15px;
+    text-align: left;
+  }
+  #footer h3 {
+    font-size: 18px;
+    margin: 20px;
+  }
+  #footer p {
+    font-size: 14px;
+  }
+}
 /* IMPORT PAGES */
 .principal {
   display: flex;
@@ -265,155 +415,18 @@
   color: white;
 }
 
-/* IMPORT LAYOUTS */
-/* Reset */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  scroll-behavior: smooth;
-  max-width: 100%;
-}
-
-/* nav */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: transparent;
-  color: rgb(255, 255, 255);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-button {
-  background-color: rgb(14, 14, 81);
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  border-color: rgb(14, 14, 81);
-  border-radius: 20px;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: transparent;
-}
-
-div {
-  display: flex;
-  justify-content: start;
-  padding: 10px;
-  position: relative;
-  color: rgb(237, 228, 228);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
-}
-
-nav ul li a {
-  border-radius: 50px;
-  padding: 5px 10px;
-  background-color: rgb(14, 14, 81);
-  font-size: 18px;
-  margin-left: 20px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: 0, 3, color 0.3s;
-}
-
-nav ul li a:hover {
-  background: transparent;
-}
-
-/* responsive */
-@media (max-width: 960px) {
-  nav ul.botones {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(14, 14, 81);
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-  }
-  nav ul.botones.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  nav ul li a {
-    margin: 10px 0;
-  }
-}
-.menu-toggle {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: transparent;
-  padding: 20px;
-  text-align: left;
-  width: 100%;
-  gap: 20px;
-}
-
-#footer h3 {
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 10px 0;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#footer h3:hover {
-  background: transparent;
-}
-
-#footer p {
-  align-content: center;
-  margin: 5px 20px;
-  padding: 0;
-  color: rgb(0, 0, 0);
-}
-
-/* responsive */
-@media (max-width: 768px) {
-  #footer {
-    padding: 15px;
-    text-align: left;
-  }
-  #footer h3 {
-    font-size: 18px;
-    margin: 20px;
-  }
-  #footer p {
-    font-size: 14px;
-  }
-}
+/* Navegacion */
+/** Pantalla inicial **/
+/** Clientes **/
+/** Footer, direccion y contacto **/
+/* pIE DE PAGINA */
+/** Ultima pagina **/
+/** Menu hamburguesa **/
+/* Responsive */
+/* contacto */
+/* nosotros */
+/* servicos */
+/* novedades */
+/* nosotros */
 
 /*# sourceMappingURL=styles.css.map */
