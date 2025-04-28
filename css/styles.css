@@ -213,6 +213,7 @@ nav ul li a:hover {
   text-align: left;
   width: 100%;
   gap: 20px;
+  background-color: gray;
 }
 
 #footer h3 {
@@ -401,6 +402,7 @@ nav ul li a:hover {
 }
 
 #novedades {
+  width: 100%;
   background-image: url(../images/background.png);
   color: white;
 }
