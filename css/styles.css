@@ -11,6 +11,8 @@ body {
   max-width: 100%;
 }
 
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -206,34 +208,23 @@ nav ul li a:hover {
 #footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  background: transparent;
-  padding: 20px;
-  text-align: left;
-  width: 100%;
-  gap: 20px;
-  background-color: gray;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  gap: 10px;
 }
 
 #footer h3 {
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 10px 0;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#footer h3:hover {
-  background: transparent;
+  color: #fff;
 }
 
 #footer p {
-  align-content: center;
-  margin: 5px 20px;
-  padding: 0;
-  color: rgb(0, 0, 0);
+  margin: 0;
+  color: #ccc;
 }
+
 
 /* pIE DE PAGINA */
 @media (max-width: 768px) {
